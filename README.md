@@ -2,9 +2,9 @@
 
 ### Object oriented programming (OOP) - Topics:
 
-- Abstração
-- Classes Abstratas
-- Classes, Objetos e Construtores
-- Herança
-- Encapsulamento
-- Polimorfismo
+- Abstraction
+- Abstract Classes
+- Classes, Objects and Constructors
+- Inheritance
+- Encapsulation
+- Polymorphism
