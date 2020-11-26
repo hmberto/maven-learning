@@ -1,3 +1,5 @@
+package br.com.sec4you;
+
 import javax.swing.JOptionPane;
 public class TotalImpostos extends Forma {
     private int estoque;
