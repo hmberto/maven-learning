@@ -1,3 +1,5 @@
+package br.com.sec4you;
+
 import javax.swing.JOptionPane;
 public class QuantidadeEstoque extends Forma {
     private float totalPrecos;
