@@ -1,3 +1,5 @@
+package br.com.sec4you;
+
 import javax.swing.JOptionPane;
 public class EstudosJava {
     public static void main(String[] args) {
