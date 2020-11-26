@@ -1,3 +1,5 @@
+package br.com.sec4you;
+
 public class Pesquisar {
     private int codigoEquipamento;
     private String nomeEquipamento;
