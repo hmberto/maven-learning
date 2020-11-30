@@ -1,14 +1,14 @@
 package br.com.humberto;
 
 import javax.swing.JOptionPane;
-public class TotalImpostos extends Forma {
+public class CalcTotalTaxes extends CalcAbstractClass {
     private int estoque;
     private float valor;
 
-    public TotalImpostos() {
+    public CalcTotalTaxes() {
     }
 
-    public TotalImpostos(int estoque, float valor) {
+    public CalcTotalTaxes(int estoque, float valor) {
         this.estoque = estoque;
         this.valor = valor;
     }

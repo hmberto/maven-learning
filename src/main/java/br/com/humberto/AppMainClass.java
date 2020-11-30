@@ -1,7 +1,7 @@
 package br.com.humberto;
 
 import javax.swing.JOptionPane;
-public class MainAppClass {
+public class AppMainClass {
     public static void main(String[] args) {
         String quant = "";
         
@@ -98,7 +98,7 @@ public class MainAppClass {
                                 float valorComImposto = Float.parseFloat(arrayValorComImposto[k]);
                                 int quantidadeEstoque = Integer.parseInt(arrayQuantidadeEstoque[k]);
 
-                                Pesquisar v = new Pesquisar(codigoEquipamento, nomeEquipamento, modelo, fabricante, valorSemImposto, valorComImposto, quantidadeEstoque);
+                                ShowsSearchResult v = new ShowsSearchResult(codigoEquipamento, nomeEquipamento, modelo, fabricante, valorSemImposto, valorComImposto, quantidadeEstoque);
                                 JOptionPane.showMessageDialog(null, v.toString());
                             }
                         }
@@ -136,7 +136,7 @@ public class MainAppClass {
                                 float valorComImposto = Float.parseFloat(arrayValorComImposto[j]);
                                 int quantidadeEstoque = Integer.parseInt(arrayQuantidadeEstoque[j]);
 
-                                Pesquisar v = new Pesquisar(codigoEquipamento, nomeEquipamento, modelo, fabricante, valorSemImposto, valorComImposto, quantidadeEstoque);
+                                ShowsSearchResult v = new ShowsSearchResult(codigoEquipamento, nomeEquipamento, modelo, fabricante, valorSemImposto, valorComImposto, quantidadeEstoque);
                                 JOptionPane.showMessageDialog(null, v.toString());
 
                                 verifica = true;
@@ -149,7 +149,7 @@ public class MainAppClass {
                     }
                 }
                 if(ask == 4){
-                    TotalImpostos v;
+                	CalcTotalTaxes v;
                     somaEstoque = 0;
                     totalImposto = 0.0f;
                     somaQuantComImposto = 0;
@@ -165,7 +165,7 @@ public class MainAppClass {
                             somaEstoque = Integer.parseInt(arrayQuantidadeEstoque[l]);
                             somaQuantComImposto = Float.parseFloat(arrayValorComImposto[l]);
 
-                            v = new TotalImpostos(somaEstoque, somaQuantComImposto);
+                            v = new CalcTotalTaxes(somaEstoque, somaQuantComImposto);
                             totalImposto += v.calculaTotal();
 
                             verifica = true;
@@ -194,7 +194,7 @@ public class MainAppClass {
                         }
                     }
                     if(verifica){
-                        MediaPrecos s = new MediaPrecos(totalPrecos, mediaPrecos);
+                    	CalcPricesAverage s = new CalcPricesAverage(totalPrecos, mediaPrecos);
                         s.mostra();
                     }
                     else if(verifica == false){

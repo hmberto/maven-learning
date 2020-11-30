@@ -2,8 +2,8 @@ package br.com.humberto;
 
 import junit.framework.TestCase;
 
-public class PesquisarTest extends TestCase {
-	public void testPesquisar() {
+public class ShowsSearchResultTest extends TestCase {
+	public void testResults() {
 		
 		int codigoEquipamento = 123;
 	    String nomeEquipamento = "EQUIPAMENTO";
@@ -15,7 +15,7 @@ public class PesquisarTest extends TestCase {
 	    
         String expectedResult = "Código do equipamento: " + codigoEquipamento + "\nNome do equipamento: " + nomeEquipamento + "\nModelo: " + modelo + "\nFabricante: " + fabricante + "\nValor sem imposto: R$" + valorSemImposto + "\nValor com imposto: R$" + valorComImposto + "\nQuantidade em estoque: " + quantidadeEstoque;
 		
-		Pesquisar h = new Pesquisar(codigoEquipamento, nomeEquipamento, modelo, fabricante, valorSemImposto, valorComImposto, quantidadeEstoque);
+        ShowsSearchResult h = new ShowsSearchResult(codigoEquipamento, nomeEquipamento, modelo, fabricante, valorSemImposto, valorComImposto, quantidadeEstoque);
 
         assertTrue(h.toString().equals(expectedResult));
         

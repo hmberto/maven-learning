@@ -1,14 +1,14 @@
 package br.com.humberto;
 
 import javax.swing.JOptionPane;
-public class MediaPrecos extends Forma {
+public class CalcPricesAverage extends CalcAbstractClass {
     private float totalPrecos;
     private int mediaPrecos;
 
-    public MediaPrecos() {
+    public CalcPricesAverage() {
     }
 
-    public MediaPrecos(float totalPrecos, int mediaPrecos) {
+    public CalcPricesAverage(float totalPrecos, int mediaPrecos) {
         this.totalPrecos = totalPrecos;
         this.mediaPrecos = mediaPrecos;
     }

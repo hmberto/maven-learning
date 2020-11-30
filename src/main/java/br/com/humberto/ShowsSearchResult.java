@@ -1,6 +1,6 @@
 package br.com.humberto;
 
-public class Pesquisar {
+public class ShowsSearchResult {
     private int codigoEquipamento;
     private String nomeEquipamento;
     private String modelo;
@@ -9,7 +9,7 @@ public class Pesquisar {
     private float valorComImposto;
     private int quantidadeEstoque;
 
-    public Pesquisar(int codigoEquipamento, String nomeEquipamento, String modelo, String fabricante, float valorSemImposto, float valorComImposto, int quantidadeEstoque) {
+    public ShowsSearchResult(int codigoEquipamento, String nomeEquipamento, String modelo, String fabricante, float valorSemImposto, float valorComImposto, int quantidadeEstoque) {
         this.codigoEquipamento = codigoEquipamento;
         this.nomeEquipamento = nomeEquipamento;
         this.modelo = modelo;
