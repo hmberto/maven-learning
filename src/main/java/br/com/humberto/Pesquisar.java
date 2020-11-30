@@ -1,4 +1,4 @@
-package br.com.sec4you;
+package br.com.humberto;
 
 public class Pesquisar {
     private int codigoEquipamento;
