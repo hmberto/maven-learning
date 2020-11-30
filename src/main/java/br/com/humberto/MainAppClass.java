@@ -1,7 +1,7 @@
 package br.com.humberto;
 
 import javax.swing.JOptionPane;
-public class EstudosJava {
+public class MainAppClass {
     public static void main(String[] args) {
         String quant = "";
         
